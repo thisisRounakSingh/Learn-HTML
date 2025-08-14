@@ -1,0 +1,10 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.wordWrap": "on",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    }
+}
