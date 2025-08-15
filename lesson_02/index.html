@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Author" content="Rounak Singh" />
+    <meta
+      name="Description"
+      content="This page is going to be my testing ground as I continue to learn HTML!"
+    />
+
+    <title>My Second Web Page.</title>
+    <link rel="icon" href="html5.png" type="image/x-icon" />
+    <!-- This `link` tag can also be used to link stylesheet for this document. -->
+
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <!-- As mentioned in previous lesson (lesson-01) the `type` attribute is totally optional, in this case it is useless, as there is only one type of stylesheet on the web - CSS. "text/css" do not imply anything extra! -->
+
+    <!-- Quick security tip -> passing file path directly into the `href` is not recommended for some critical web pages. It can cause many security issues. Path sanitization is required! Using server-side rendering can be helpful OR implementing `CORS - Cross-Origin Resource Sharing`. By any means path should not directly refer to the file into local browser or system directory where the DOM is being rendered or displayed. For most web pages its fine, but often not recommended. -->
+  </head>
+
+  <body>
+    <h1>Hello, World!</h1>
+    <p>This is my first web page.</p>
+  </body>
+</html>

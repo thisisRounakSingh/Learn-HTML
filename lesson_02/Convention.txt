@@ -1,0 +1,3 @@
+"index.html" --> "index" is the standard name we use to name the very first html file - or the main document of which other HTML documents are linked.
+
+"main.css" --> "main" is again a convention to name the CSS file that styles the "index.html".
