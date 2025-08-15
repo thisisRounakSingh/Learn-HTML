@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Indicates that code below is supposed to be html, and so be rendered as an HTML - Recommended by `W3C` -->
+
+<!-- Indicates the start of web page. -->
+<html lang="en">
+  <!-- Added `lang` attribute and set it to "en" which stands for English. -->
+  <head>
+    <!-- The meta data about the page. -->
+
+    <meta charset="UTF-8" />
+    <!-- meta tags provides "additional useful" data for proper rendering of the web page -- `W3C` suggest to use this as standard. -->
+
+    <!-- We can make custom `meta` tags by using attribute `name` and `content` - `name` describes what that `meta` tag is for and then the `content` stores the actual value meaningful to the `name` attribute -->
+
+    <meta name="Author" content="Rounak Singh" />
+    <meta
+      name="Description"
+      content="This page is going to be my testing ground as I continue to learn HTML!"
+    />
+
+    <!-- The above two `meta` tags can be used by browsers to know additional info about this HTML document -->
+
+    <title>My First Web Page.</title>
+
+    <link rel="icon" href="html5.png" type="image/x-icon" />
+    <!-- `link` tag is used to link a file to the `DOM`.
+
+    `rel` attribute is used define relation as to what data is being passed so that our current document can understand it.
+
+    `href` or `hyper text reference` indicates text referencing the address to a file or an web page address. 
+    
+    `type` attribute explains how the content is to be used, in this case as a icon for the web page. (Although this is totally optional - in fact use of `type` attribute is not recommended anymore!) -->
+
+    <style>
+      /* The design of the web page - CSS (Cascading Style Sheet) */
+
+      /* Applies to the entire DOM (Document Object Model) */
+      html {
+        font-size: 22px;
+      }
+
+      /* Applies only to the elements inside the `body` tag. */
+      body {
+        background-color: #333;
+        color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The actual web page goes here. -->
+    <h1>
+      <!-- The `<h1>` tag is the heading, and is the biggest heading in HTML. Typically one will use this just once or minimum of all the heading tags used. -->
+      Hello, World!
+    </h1>
+    <p>This is my first web page.</p>
+  </body>
+</html>

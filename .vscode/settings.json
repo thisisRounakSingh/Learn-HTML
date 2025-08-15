@@ -1,10 +1,18 @@
 {
-    "files.autoSave": "afterDelay",
-    "editor.wordWrap": "on",
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
-    }
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.words": ["Rounak"]
 }

@@ -1,6 +1,7 @@
 {
-    "recommendations": [
-        "ms-vscode.live-server",
-        "vscode-icons-team.vscode-icons"
-    ]
+  "recommendations": [
+    "ms-vscode.live-server",
+    "vscode-icons-team.vscode-icons",
+    "esbenp.prettier-vscode"
+  ]
 }
