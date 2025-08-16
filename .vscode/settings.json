@@ -1,5 +1,4 @@
 {
-  "files.autoSave": "onFocusChange",
   "editor.formatOnSave": true,
   "editor.wordWrap": "on",
   "github.copilot.enable": {
@@ -17,5 +16,13 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.words": ["CROS", "Rounak"]
+  "cSpell.words": [
+    "Cancún",
+    "Colonia",
+    "CROS",
+    "Margaritaville",
+    "México",
+    "Petempich",
+    "Rounak"
+  ]
 }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Hover over this tag, you won't find any description suggested for this tag in visual studio code as it is not the part of `HTML`, it is just to indicate the browser that this document is supposed to be an `HTML` file and so be rendered as an `HTML` -->
+
+<!-- This is a HTML Comment, something that will be ignored bu the HTML parser/renderer of the browser. If one inspect this page, they may be able to see this comment. -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Third Web Page.</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="html5.png" />
+  </head>
+  <body>
+    <!-- It is important to properly structure our code so that when any screen reader technology reads our web page they know how the content in this document is arranged. (As many web browser feature screen reader aka simple view option to read many web pages with only important content.) -->
+
+    <!-- In general practice properly arranging tags is essential so that anyone reading our web page can understand the content properly. -->
+    <h1>Hello, World!</h1>
+
+    <hr />
+    <!-- Adds horizontal line separation `hr` -> `Horizontal Rule` -->
+
+    <h2>I'm ready to Learn HTML</h2>
+    <p>This is my first web page.</p>
+
+    <h3>My Daily Schedule</h3>
+    <p>
+      Let me tell you how:
+      <br />&nbsp;&nbsp;&nbsp;...I learn more about web dev.
+      <br />&nbsp;&nbsp;&nbsp;...I plan out my schedule.
+      <br />&nbsp;&nbsp;&nbsp;...I use resources from
+      <abbr title="Mozilla Developer Network">MDN</abbr>.
+
+      <!-- &nbsp; for ' ' -->
+
+      <!-- `abbr` tag stands for abbreviation. On hover browser will shown a dialog box (or a tool tip) showing the full-form of the word. It can be used not just for abbreviation one can use it where ever required. Although screen assistive technologies or SEO websites like google.com can't access abbreviation and so has no effect to them. -->
+    </p>
+    <!-- `White Space Collapsing` - In HTML white spaces are automatically removed, if we add white space in any tags that shows text, it will not be shown until we add a line break using `br` tag. Anyway the editor I am using auto formats when I add to many white spaces in any text tag or any tag for that matter. -->
+
+    <!-- If `br` tag is inside any tag it takes formatting of that tag. -->
+
+    <hr />
+
+    <h2>I am also planning a vacation.</h2>
+    <p>I've been working hard and <em>really need a getaway.</em></p>
+    <!-- `em` tag to used to emphasize a text or text block (makes it in italics - default behavior, can be modified using CSS). All of these things gives semantics to our web page, which will be helpful in search query index on various search platforms and rendering in the browser -->
+
+    <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
+
+    <h3>Places I'd like to visit</h3>
+    <p>I've heard good things about the Caribbean.</p>
+    <p>I've heard good things about going here:</p>
+    <address>
+      Margaritaville Island Reserve Riviera Cancún<br />
+      Bahia Petempich Puerto Morelos, Mexico<br />
+      Colonia Morelos, México 77580
+    </address>
+
+    <!-- The `address` tag also provide semantic meaning for the any screen assistive technology or for SEO. It is used for contact related information or passing an actual address into the content. -->
+
+    <h3>Places I'd to avoid.</h3>
+    <p>Anywhere cold. <strong>No way!</strong></p>
+
+    <!-- Another emphasizing tag is `strong`. `strong` and `em` are inline elements - only applies to the content inside it, whereas `h1`, `h2`, `h3`, `p` and many other are block-level elements - that is they apply to every content (or any other tags) inside them. -->
+
+    <hr />
+
+    &lt;&lt;&lt; &copy; Rounak Singh &gt;&gt;&gt;
+    <!-- &lt; for < and &gt; for > -->
+
+    <!-- `HTML` entities can be used to represent special character like " " or any `HTML` tag itself. They start with `&` followed by the `HTML` entities code that represent that entity ending with a semi-colon. Refer to `MDN` docs for all the `HTML` all entities code.  -->
+
+    <!-- An observation - The browser's inspect page do not show the original `HTML` document. What they do show is the `DOM` (Document Object Model) - which we program via HTML. Often it is just HTML itself but it is not pure HTML.
+    
+    An example - the entity `&nbsp;` which means ' ', will be shown directly into the DOM (The inspect page) in most browsers, but `&lt;` and `&gt;` will be shown as `<` and `>` and not the code (in most chromium based browser you will observe this), as entities like these represent actual HTML code, which may get misinterpreted if we want to use it in our content therefore the browser parse it before hand and show it into the DOM. To see the original code one can refer to "view source" page in the browser which will show the original code. Also in many other browser one may see `&nbsp` as just ' ' and not the code itself.
+    
+    In the rendered DOM (what the browser uses and what you see in "Inspect"), everything is decoded—the original encoding method is lost, and only the actual character is stored. -->
+  </body>
+</html>
