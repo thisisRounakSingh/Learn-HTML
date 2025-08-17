@@ -1,0 +1,23 @@
+html {
+  font-size: 22px;
+}
+
+body {
+  background-color: #333;
+  color: whitesmoke;
+}
+
+a {
+  color: aliceblue;
+}
+
+a:visited {
+  color: lightgray;
+}
+
+a:hover,
+a:active {
+  color: #eee;
+}
+
+/* Updated color of links in anchor tag to work better with our dark theme. */

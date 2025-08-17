@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Sixth Web Page.</title>
+    <link rel="icon" href="../Global_Resources/html5.png" />
+    <link rel="stylesheet" href="../Global_Resources/main.css" />
+    <!-- Instead of having to copy these two common file each time into the lesson folder now they will be used from `Global_Resources` folder in forthcoming lectures. -->
+  </head>
+  <body>
+    <h1>My Goal for the year.</h1>
+
+    <hr />
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#html">Learning HTML</a>
+        </li>
+        <li>
+          <a href="#vacation">Planning a vacation</a>
+        </li>
+      </ul>
+    </nav>
+
+    <hr />
+
+    <section id="html">
+      <h2>I'm ready to Learn HTML</h2>
+      <p>This is my first web page.</p>
+      <img
+        src="./img/html_logo_300x300.png"
+        alt="HTML5 LOGO"
+        title="This is a HTML5 logo."
+        width="300"
+        height="300"
+      />
+      <!-- HTML can display many multimedia, one of them is an image. One can use `img` tag to put image into the DOM. The attribute `src` host either `Absolute Reference` or `Relative Reference` to the image path/location. The `alt` attribute will show a broken image icon with the text passed to it when the image fails to load into the DOM for whatever reason. `title` attribute as discussed in `lesson_03` will show a tool-tip showing the given text when user hover over the content using the mouse cursor. -->
+
+      <!-- About `width` and `height` attribute in the `image` tag - From the 90's it was not always required to specify `width` and `height` of the image, the browser would figure out width and height itself, or we can use `CSS` to change these values if want some custom height and width. Now Google (Specifically Developers of Chromium), recommends that we do provide these values because of something called as `Cumulative Layout Shift`. What happens is that often we load the website but currently that browser Window is running is in the background so the browser has not figured out the space image needs, although the image has been loaded. Therefore when will click on browser to bring it on to the focus, the image shifts (if needs to), which may lead to unwanted clicks so to prevent that Google suggests to specify `width` and `height` values so that the browser render it beforehand. Yes, CSS will be applied if we specify the value there also, but it is just for precaution. As time proceeds fixes have been made in Chromium (And other Browser Engine) HTML parser to fix this. Also both the attributes takes values in pixels. -->
+
+      <!-- A note about self closing tags - Since the introduction of HTML standard 5 (HTML5) self closing tags such as `img` or `hr` do not require `/` ending. For example <img> and <img /> both are correct and later one is totally optional. The thing is one can continue doing using `/` because once they will start doing ReactJS they will have to use `/` for self closing tags. In general also doing so do not disobey web standards. -->
+
+      <figure>
+        <figcaption>An Example Of HTML5 Code.</figcaption>
+        <p>
+          <code>&lt;h1&gt;Hello, World!&lt;/h1&gt;</code>
+          <!-- `code` tag is actually used to describe code of not just HTML but any markup or programming language. -->
+        </p>
+      </figure>
+
+      <h3>My Daily Schedule</h3>
+      <p>Let me tell you how:</p>
+
+      <ol>
+        <li>I learn more about web dev.</li>
+        <li>I plan out my schedule.</li>
+        <li>
+          I use resources from
+          <abbr title="Mozilla Developer Network">
+            <a href="https://developer.mozilla.org/">MDN</a> </abbr
+          >.
+        </li>
+      </ol>
+    </section>
+    <hr />
+
+    <section id="vacation">
+      <h2>I am also planning a vacation.</h2>
+      <p>I've been working hard and <em>really need a getaway.</em></p>
+
+      <p>
+        I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.
+      </p>
+
+      <h3>Places I'd like to visit</h3>
+
+      <!-- Adding many `line breaks` using Visual Studio Code Emmet.  -->
+      <!-- br*150 -->
+
+      <ul>
+        <li>
+          <p>I've heard good things about the Caribbean.</p>
+          <figure>
+            <img
+              src="./img/caribbean.jpg"
+              alt="Caribbean beach"
+              title="I want to visit a caribbean beach."
+              width="400"
+              height="225"
+              loading="lazy"
+            />
+            <!-- About `loading` attribute - `loading` attribute tells the browser what priority it should give to load the content. In web terms, the line to which we can see the content in our web page is called as the `fold`. To see more content below `fold` (if it is available there) one has to scroll down. If below `fold` there is an image, we can, using `loading` attribute can tell the browser whether to load the image as soon as possible or load when required. By default the value in the attribute is set to "eager" (even if we don't use this attribute it is there and set to "eager"), which means to load the image as soon as possible, but when set to "lazy", browser will not load this image until it is very close to the `fold`. -->
+
+            <!-- In our case, the caribbean image is very close to the `fold` therefore it is loaded and cached immediately. To test this, go to the network tab of web tools and disable caching, choose `img` tag in the viewer and add many line breaks just above the image and observe in the networking section of web tools, how once we scroll enough the image gets loaded, we might not have reached the image, but since it is very close to the `fold` it gets loaded. -->
+            <figcaption>Caribbean Beach Getaway</figcaption>
+            <!-- About `figure` tag - used to mark a content (typically images and videos). It will give some indentation (and vertical padding) to the content to separate it from the main document. One can also use `figcaption` tag to add caption to the content. `figcaption` can either be on the top or at the bottom in the `figure` tag. -->
+          </figure>
+        </li>
+        <li>
+          <p>I've heard good things about going here:</p>
+          <address>
+            Margaritaville Island Reserve Riviera Cancún<br />
+            Bahia Petempich Puerto Morelos, Mexico<br />
+            Colonia Morelos, México 77580
+          </address>
+          <figure>
+            <img
+              src="./img/vacation.jpg"
+              alt="Cancun Vacation"
+              title="It's 5 o'Clock somewhere!"
+              width="400"
+              height="267"
+              loading="lazy"
+            />
+            <figcaption>A Caribbean Vacation Image</figcaption>
+          </figure>
+          <!-- We can use single quotes inside of double quotes. -->
+        </li>
+      </ul>
+      <!-- Cannot put `figure` tag inside of `ul` tag as that would violate the web standards. If we want to put it in `ul` put it in `li` tag as well. -->
+
+      <h3>Places I want to avoid.</h3>
+      <dl>
+        <dt>North Pole</dt>
+        <dd>I hear this is <strong>cold</strong>!</dd>
+
+        <dt>South Pole</dt>
+        <dd>This is also cold.</dd>
+
+        <dt>Mountain Tops</dt>
+        <dd>These are also cold.</dd>
+      </dl>
+    </section>
+
+    <hr />
+
+    &lt;&lt;&lt; &copy; <a href="about.html">Rounak Singh</a> &gt;&gt;&gt;
+    <p>
+      <a href="#">Back to the top.</a>
+    </p>
+  </body>
+</html>
+
+<!-- Got few image resource suggestion from the course - added them to my bookmark. -->
