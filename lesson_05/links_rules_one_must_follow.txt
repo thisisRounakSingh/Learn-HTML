@@ -1,0 +1,13 @@
+We pass links to the anchor tag. In the course of freeCodeCamp Dr. Dave Gray suggest few rules when using these links, all of them are mentioned below.
+
+Link Text Rules: -
+
+#1 Avoid printing the full web address to the page. (use this in the `href` attribute.). Only mention the name of the website.
+
+#2 Avoid "links to" phrase. We all know its a link.
+
+#3 Keep your link text short. Exact topic. Not sentences.
+
+#4 No links that say "click here". It provides no meaning.
+
+Following this improves the SEO (Search Engine Optimization) of the web page.
