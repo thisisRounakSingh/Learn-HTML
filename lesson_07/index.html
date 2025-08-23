@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Seventh Web Page.</title>
+    <link rel="icon" href="../Global_Resources/html5.png" />
+    <link rel="stylesheet" href="../Global_Resources/main.css" />
+  </head>
+  <body>
+    <!-- Typically when asked to write an essay we divide it into three sections, the first paragraph which introduces the topic, the second paragraph which explains/debates/analyzes/describes the topic, the third paragraph which leaves us with questions-to-think/conclusions/message. Similarly how we structure a HTML document - the `header`, the `main`, the `footer`. -->
+
+    <!-- About `header` tag - Indicates that the content inside it is heading or navigation area for its root element (main topic). It is a semantic tag, it has no affect on `DOM` style or format. When inside `body` tag it reflects that it is heading or navigation area for the entire page. Can be used not just for the whole webpage but to a topic or a section of the webpage. There can be more than one `header` element per-page but it should follow a hierarchy.-->
+    <header>
+      <h1>My Goal for the year.</h1>
+      <!-- The goal of lesson 07 is to learn hierarchy (semantic tags) in a HTML document. Starting from this heading <h1> - Each document should have only one <h1> - as suggested by the course mentor. So here we are already correct. The heading tags goes to 6 - <h6>. Although typically all we need is till <h3>. We go down this series of 1,2,3 and so on till 6 for heading tags as we progress into documenting topic, sub-topics, and more nested topics inside of this sub-topic. -->
+
+      <!-- <hr /> - We don't need horizontal rule anymore. -->
+
+      <!-- <hr> tag also provide semantic meaning to our web page. They indicate topic change. This also help us to easily read our HTML document. We can remove the lines caused by these tags using CSS but it is good to have - as it maintains better SEO for the website, even though we may remove the line that differentiate the content beneath and above it.  -->
+
+      <!-- When we say semantic tags we don't mean always means hierarchy rather "meaning" for our web page. Which will help search engines and browsers to understand the context of our webpage better, as below by `nav` tag we want to indicate that 'hey here goes our links to parts of the webpage that the reader/user might want to jump to'. Semantic tags are not generic divider (the `div` tag).-->
+
+      <!-- Typically `nav` tags are used only on the `header` of the body and one in the `footer` on the `body`, but one can use it wherever required. To increase semantics, one can add a attribute called `aria-label`, set it to the purpose that the `nav` element serves. -->
+
+      <!-- <nav aria-labelledby="primary-navigation">
+              <h2 id="primary-navigation">Primary Navigation</h2> <- We can direct to this element using anchor tag. Therefore, for semantics, `aria-label` changes to `aria-labelledby`, which says hey instead of these elements being `x` they will be called as as `x` which is linked to `h2` whenever necessary. Helpful in case of multiple navigation menus.
+            </nav> 
+            
+            We can also do something like this, where we can use an anchor tag anywhere on our webpage to direct to the `id`, which will take user to this primary navigation menu.
+            `aria-labelledby` in this case describes that elements inside this are will be labelled as such.
+      -->
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li>
+            <a href="#html">Learning HTML</a>
+          </li>
+          <li>
+            <a href="#vacation">Planning a vacation</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+
+    <!-- About `main` tag - Hosts the main content of the `body` (or our web app). For better SEO it is recommended to have only one `main` element per-page. -->
+    <main>
+      <!-- Instead of `section` tag, we can use `article` tag. We can use `article` tag when we intend to show content that can have page of its own. Each article will have its own heading using heading tags (h1,h2...) - suggestion from MDN docs.  -->
+      <article id="html">
+        <h2>I'm ready to Learn HTML</h2>
+        <section>
+          <h3>HTML5</h3>
+          <p>This is my first web page.</p>
+          <img
+            src="../Global_Resources/img/html_logo_300x300.png"
+            alt="HTML5 LOGO"
+            title="This is a HTML5 logo."
+            width="300"
+            height="300"
+          />
+
+          <figure>
+            <figcaption>An Example Of HTML5 Code.</figcaption>
+            <p>
+              <code>&lt;h1&gt;Hello, World!&lt;/h1&gt;</code>
+            </p>
+          </figure>
+        </section>
+
+        <section>
+          <h3>My Daily Schedule</h3>
+          <p>Let me tell you how:</p>
+
+          <ol>
+            <li>I learn more about web dev.</li>
+            <li>I plan out my schedule.</li>
+            <li>
+              I use resources from
+              <abbr title="Mozilla Developer Network">
+                <a href="https://developer.mozilla.org/">MDN</a> </abbr
+              >.
+            </li>
+          </ol>
+          <!-- `aside` tag usually store content that are somewhat related to the main content. They are also used to represent sidebar. Content inside `aside` will be treated as complementary to the main content in the `article` tag. -->
+          <aside>
+            <!-- `details` tag shows a disclosure widget from which user can see controls or some information. -->
+            <details>
+              <!-- `summary` tag shows summary/disclosure widget title of the parents `details` element. -->
+              <summary>
+                <!-- `mark` is an inline-element, used to highlight the section of text. -->
+                Guess the <mark>number of hours</mark> I code per day.
+              </summary>
+              <p>
+                <!-- `time` tag is used to describe time instance or duration of time in a specified format that can be accessed from MDN. Here `08:00` is passed to add 8 AM in a 24 hour format. For 3 hours that would be `PT3H`. This tag doesn't change anything in our DOM but it does help improve our website SEO. `time` is yet another semantic tag, same applies to `mark` tag. -->
+                I start at <time datetime="08:00">8 AM</time> and I write code
+                for <time datetime="PT3H">3 hours</time> every morning.
+              </p>
+            </details>
+          </aside>
+        </section>
+      </article>
+      <hr />
+
+      <!-- Similarly here, we can replace `section` with `article` tag - Although there is a lot debate about when to use `section` and `article` tag, but as per the course mentor we should `article` tag if we have heading to show and a dedicated explanation of the heading whereas `section` is to be used when we want to separate generic piece of content (not necessarily with a heading), and can also be used inside of the `article` tag. -->
+      <article id="vacation">
+        <h2>I am also planning a vacation.</h2>
+        <p>I've been working hard and <em>really need a getaway.</em></p>
+
+        <p>
+          I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.
+        </p>
+
+        <!-- Separating articles with multiple heading/topics into sections does improve our website SEO. -->
+        <section>
+          <h3>Places I'd like to visit</h3>
+
+          <ul>
+            <li>
+              <p>I've heard good things about the Caribbean.</p>
+              <figure>
+                <img
+                  src="../Global_Resources/img/caribbean.jpg"
+                  alt="Caribbean beach"
+                  title="I want to visit a caribbean beach."
+                  width="400"
+                  height="225"
+                  loading="lazy"
+                />
+
+                <figcaption>Caribbean Beach Getaway</figcaption>
+              </figure>
+            </li>
+            <li>
+              <p>I've heard good things about going here:</p>
+              <address>
+                Margaritaville Island Reserve Riviera Cancún<br />
+                Bahia Petempich Puerto Morelos, Mexico<br />
+                Colonia Morelos, México 77580
+              </address>
+              <figure>
+                <img
+                  src="../Global_Resources/img/vacation.jpg"
+                  alt="Cancun Vacation"
+                  title="It's 5 o'Clock somewhere!"
+                  width="400"
+                  height="267"
+                  loading="lazy"
+                />
+                <figcaption>A Caribbean Vacation Image</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+
+        <!-- `div` and `span` tag do not have any special meaning in our DOM, not even any semantic meaning. They are here to separate some block of content (yes, both are block level element) but more so there use exist with CSS (which I will learn later) therefore it is not advised to use them now (as per the course mentor), earlier they were a lot common but now they are not used much as it does not improve SEO of our website. Avoid using both of these tags in pure HTML. "When no semantic element is the correct/accurate choice that is the time we should use `div` and `span` - course mentor." -->
+        <!-- <div></div>
+        <span></span> -->
+
+        <!-- Course mentor suggest to use a chrome extension called `HTML5 OutLiner` to see the DOM content hierarchy. -->
+
+        <section>
+          <h3>Places I want to avoid.</h3>
+          <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this is <strong>cold</strong>!</dd>
+
+            <dt>South Pole</dt>
+            <dd>This is also cold.</dd>
+
+            <dt>Mountain Tops</dt>
+            <dd>These are also cold.</dd>
+          </dl>
+        </section>
+      </article>
+    </main>
+
+    <hr />
+
+    <!-- About `footer` tag - Stores links related to document/topic, author name and information, copyright information/more links related to the topic or webpage. It represents these information in relation to its nearest ancestor/root element, if root element is `body` than it applies to the whole web page. Typically we like to have only one `footer` element for better SEO. -->
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy; <a href="about.html">Rounak Singh</a> &gt;&gt;&gt;
+      </p>
+      <p>
+        <a href="#">Back to the top.</a>
+      </p>
+    </footer>
+  </body>
+</html>
