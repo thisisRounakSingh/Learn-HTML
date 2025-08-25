@@ -21,3 +21,16 @@ a:active {
 }
 
 /* Updated color of links in anchor tag to work better with our dark theme. */
+
+table,
+tr,
+th,
+td,
+caption {
+  border: 1px solid #eee;
+  font-family: "Courier New", Courier, monospace;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
+
+/* Applying required CSS to properly see the table in action. */

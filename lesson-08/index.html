@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Eighth Web Page.</title>
+    <link rel="icon" href="../Global_Resources/html5.png" />
+    <link rel="stylesheet" href="../Global_Resources/main.css" />
+  </head>
+  <body>
+    <!-- Tables in html are used to store tabular data/information. In early 19's or early 2000's tables were used to structure the entire HTML document, but we should not do that now. To structure the HTML document we should only use semantic HTML and CSS.
+     
+    Tables in common practice do need CSS to look accurate, but we can use raw HTML to start learning about it. -->
+    <header>
+      <h1>My Goal for the year.</h1>
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li>
+            <a href="#html">Learning HTML</a>
+          </li>
+          <li>
+            <a href="#vacation">Planning a vacation</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <article id="html">
+        <h2>I'm ready to Learn HTML</h2>
+        <section>
+          <h3>HTML5</h3>
+          <p>This is my first web page.</p>
+          <img
+            src="../Global_Resources/img/html_logo_300x300.png"
+            alt="HTML5 LOGO"
+            title="This is a HTML5 logo."
+            width="300"
+            height="300"
+          />
+
+          <figure>
+            <figcaption>An Example Of HTML5 Code.</figcaption>
+            <p>
+              <code>&lt;h1&gt;Hello, World!&lt;/h1&gt;</code>
+            </p>
+          </figure>
+        </section>
+
+        <section>
+          <h3>My Daily Schedule</h3>
+          <p>Let me tell you how:</p>
+
+          <ol>
+            <li>I learn more about web dev.</li>
+            <li>I plan out my schedule.</li>
+            <li>
+              I use resources from
+              <abbr title="Mozilla Developer Network">
+                <a href="https://developer.mozilla.org/">MDN</a> </abbr
+              >.
+            </li>
+          </ol>
+
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark>number of hours</mark> I code per day.
+              </summary>
+              <p>
+                I start at <time datetime="08:00">8 AM</time> and I write code
+                for <time datetime="PT3H">3 hours</time> every morning.
+              </p>
+            </details>
+          </aside>
+          <br />
+          <!-- `table` tag - use to store information in tabular format. Note that `table` element, like most other elements DO NOT take the full width of the page, and only takes the width required to store the information in tabular format. -->
+          <table>
+            <!-- `caption` tag - decides the title of the `table` element, if it has `table` as the parent element. It a semantic tag - having proper title to our table improves the SEO of our website. Expands along the entire row of the table, also comes with some basic styling to it by default. -->
+            <caption>
+              My Daily Schedule
+            </caption>
+            <!-- `tr` and `td` - `tr` represents the table row and `td` represents the data in the row. `tr` is sequenced based on which `tr` is at the top of the code (Vertical arrangement). -->
+
+            <!-- `thead` and `tbody` tag - Both are semantic tags, `thead` is to indicate the table header and `tbody` is to indicate the body of the table. -->
+            <thead>
+              <tr>
+                <!-- `th` tag - represents row heading - comes with some default styling. -->
+                <th>&nbsp;</th>
+                <!-- This heading over here uses `HTML entities` to mark a empty row section to give side-heading to the existing columns - Morning, Break, Afternoon and Night.-->
+                <!-- `scope` attribute tells the browser how the table heading `th` related to that table. -->
+                <!-- Although it is better to use `scope` one can also use `id` to each `th` as a unique identifier, but if so, then will also need to pass `header` into each `td` with `id` of respective row heading and column heading (if it exist). -->
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+                <!-- Even if I don't write this `td` there will still be a row for this (with no data) as below this there exist the column along this row. -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Morning</th>
+                <td>
+                  <time datetime="08:00">8am</time>-<time datetime="11:00"
+                    >11am</time
+                  >
+                </td>
+                <td>Write Code</td>
+              </tr>
+              <tr>
+                <th scope="row">Break</th>
+                <td>
+                  <time datetime="11:00">11am</time>-<time datetime="12:00"
+                    >12am</time
+                  >
+                </td>
+                <td>Eat Lunch</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <!-- `datetime` is in 24 hour format therefore 5:00 is not correct 05:00 is correct. -->
+                  <time datetime="12:00">12am</time>-<time datetime="05:00"
+                    >5am</time
+                  >
+                </td>
+                <td>Study for other courses.</td>
+              </tr>
+              <!-- <tr>
+              <td colspan="2">Free time</td>
+            </tr> `colspan` attribute - Tells the browser to make a row with given number of columns with the specified data. -->
+              <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">All other time</td>
+                <!-- `rowspan` attribute automatically fixates the next row below it. (As browser arranges row in horizontal sequence.) -->
+                <!-- `rowspan` attribute - Instructs to browser about the row space based on the number of rows we want. -->
+                <td>Free time</td>
+              </tr>
+              <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+            <!-- `tfoot` tag - block of rows that consist of column summaries, it is a semantic tag which indicates the footer of the parent `table` element. -->
+            <tfoot>
+              <tr>
+                <td colspan="3">
+                  And that's what I do everyday, 5 days a week. Just eat, sleep,
+                  code ..and recharge!
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </article>
+      <hr />
+
+      <article id="vacation">
+        <h2>I am also planning a vacation.</h2>
+        <p>I've been working hard and <em>really need a getaway.</em></p>
+
+        <p>
+          I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.
+        </p>
+
+        <section>
+          <h3>Places I'd like to visit</h3>
+
+          <ul>
+            <li>
+              <p>I've heard good things about the Caribbean.</p>
+              <figure>
+                <img
+                  src="../Global_Resources/img/caribbean.jpg"
+                  alt="Caribbean beach"
+                  title="I want to visit a caribbean beach."
+                  width="400"
+                  height="225"
+                  loading="lazy"
+                />
+
+                <figcaption>Caribbean Beach Getaway</figcaption>
+              </figure>
+            </li>
+            <li>
+              <p>I've heard good things about going here:</p>
+              <address>
+                Margaritaville Island Reserve Riviera Cancún<br />
+                Bahia Petempich Puerto Morelos, Mexico<br />
+                Colonia Morelos, México 77580
+              </address>
+              <figure>
+                <img
+                  src="../Global_Resources/img/vacation.jpg"
+                  alt="Cancun Vacation"
+                  title="It's 5 o'Clock somewhere!"
+                  width="400"
+                  height="267"
+                  loading="lazy"
+                />
+                <figcaption>A Caribbean Vacation Image</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Places I want to avoid.</h3>
+          <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this is <strong>cold</strong>!</dd>
+
+            <dt>South Pole</dt>
+            <dd>This is also cold.</dd>
+
+            <dt>Mountain Tops</dt>
+            <dd>These are also cold.</dd>
+          </dl>
+        </section>
+      </article>
+    </main>
+
+    <hr />
+
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy; <a href="about.html">Rounak Singh</a> &gt;&gt;&gt;
+      </p>
+      <p>
+        <a href="#">Back to the top.</a>
+      </p>
+    </footer>
+  </body>
+</html>
