@@ -8,6 +8,8 @@
 
 - **Obviously one cannot learn all the possible HTML5 tags and its attributes, therefore mentor (Dave Gray) suggests to refer to MDN docs to know more about different HTML5 tags, although many concepts are covered which is more than enough. Future improvisation can be made using CSS which I am going to learn from the same tutor from [freeCodeCamp](https://freecodecamp.org/).**
 
+- **University Instructor [Mr. Dave Gray](https://github.com/gitdagray) is the mentor in this course.**
+
 ## Course Used &darr;
 
 - **[Learn HTML5 - Full Tutorial For Beginners By freeCodeCamp On Youtube](https://youtu.be/kUMe1FH4CHE)**
