@@ -22,13 +22,13 @@
 
 ## Chapter List -
 
-1. [Chapter 01 - Getting Started](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML_Project/lesson-01/)
-2. [Chapter 02 - Head Element](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML_Project/lesson-02/)
-3. [Chapter 03 - Text Basics](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML_Project/lesson-03/)
-4. [Chapter 04 - List In HTML5](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML_Project/lesson-04/)
-5. [Chapter 05 - Links In HTML5](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML_Project/lesson-05/)
-6. [Chapter 06 - Images In HTML5](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML_Project/lesson-06/)
-7. [Chapter 07 - Semantics](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML_Project/lesson-07/)
-8. [Chapter 08 - Tables In HTML5](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML_Project/lesson-08/)
-9. [Chapter 09 - Forms And Inputs](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML_Project/lesson-09/)
-10. [Chapter 10 - HTML5 Project](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML_Project/HTML_Project/)
+1. [Chapter 01 - Getting Started](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML-Project/lesson-01/)
+2. [Chapter 02 - Head Element](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML-Project/lesson-02/)
+3. [Chapter 03 - Text Basics](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML-Project/lesson-03/)
+4. [Chapter 04 - List In HTML5](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML-Project/lesson-04/)
+5. [Chapter 05 - Links In HTML5](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML-Project/lesson-05/)
+6. [Chapter 06 - Images In HTML5](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML-Project/lesson-06/)
+7. [Chapter 07 - Semantics](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML-Project/lesson-07/)
+8. [Chapter 08 - Tables In HTML5](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML-Project/lesson-08/)
+9. [Chapter 09 - Forms And Inputs](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML-Project/lesson-09/)
+10. [Chapter 10 - HTML5 Project](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML-Project/HTML_Project/)
