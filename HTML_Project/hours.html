@@ -3,24 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LTS - Opening Timings</title>
+    <meta name="author" content="Rounak Singh" />
+    <!-- Specify correct description per-page. -->
+    <meta name="description" content="Store hours for The Little Taco Shop" />
+    <title>LTS - Hours</title>
     <link rel="icon" href="./icon/favicon.ico" />
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
     <header>
-      <h1>Little Taco Shop Hours</h1>
+      <h1>The Little Taco Shop Hours</h1>
       <nav>
         <ul>
           <li>
-            <a href="index.html">Home</a>
+            <a href="./">Home</a>
           </li>
           <li>
             <!-- Need to use `./` instead of straight file name because of server routing. -->
-            <a href="./index.html#aboutLTS">About LTS</a>
+            <a href="./#aboutLTS">About LTS</a>
           </li>
           <li>
-            <a href="./index.html#ourMenu">Our Menu</a>
+            <a href="./#ourMenu">Our Menu</a>
           </li>
           <li>
             <a href="contact.html">Contact Us</a>
@@ -42,10 +45,9 @@
     <hr />
 
     <main>
-      <section>
-        <p>We are open 7 days a week!</p>
-      </section>
+      <p>We are open 7 days a week!</p>
 
+      <!-- Mentor didn't use section tag but I like to have it (it here does not affect the semantics of our page). The `id` help us link us right to this section easily. -->
       <section id="storeHours">
         <dl>
           <dt>Sunday-Thursday</dt>
@@ -55,9 +57,7 @@
         </dl>
       </section>
 
-      <section>
-        <a href="#">Back to Top</a>
-      </section>
+      <a href="#">Back to Top</a>
     </main>
 
     <hr />

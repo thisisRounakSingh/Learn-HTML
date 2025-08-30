@@ -1,0 +1,9 @@
+- I use live-preview extension of visual studio code. Which creates a local server which this sever starts from the top most directory.
+
+- We know that sever looks for `index.html` first. Which is the convention followed by most severs. The term 'index' (in context of HTML) refers to that one HTML file which has the URL to all other pages (or to the page which further get links to other nested pages) and also to the main JavaScript file which (if usage demands) invokes other JavaScript files and also the master CSS file. Basically in simple term it is the document from where our website has to start. Therefore most server look for `index.html`.
+
+- So if say we pass the IP of the website (in our case localhost) to the browser the server will redirect the browser to the `index.html` file. 
+
+- Now in my case often in anchor tag in the `href` attribute I if pass `/` it should tell the server to open `index.html` file - it didn't. It is because as mentioned above, my top most directory has `/`, and it this case the topmost directory has no `index.html` file instead in the subdirectory lessons folder it has `index.html`, therefore it has got no `index.html` to open.
+
+- Say from `lesson-09` I want the `about.html` to direct to `index.html`, in that case in the `href` attribute I need to pass `./` (with the period symbol), it is because we want to open the local `index.html` present inside `lesson-09` from `about.html`, and not from the topmost directory that is `Learn-HTML`.

@@ -1,9 +1,18 @@
 <!-- I wrote this project on my own by using the notes and code provided during lectures, later I matched it with the solution of the mentor and improvised it to that standard. -->
+
+<!-- Now improvising the code from the tutorial the mentor. -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Need to add author and description `meta` tags. -->
+    <meta name="author" content="Rounak Singh" />
+    <meta
+      name="description"
+      content="The official website of The Little Taco Shop"
+    />
     <title>Little Taco Shop - Home</title>
     <link rel="icon" href="./icon/favicon.ico" />
     <link rel="stylesheet" href="./CSS/style.css" />
@@ -14,7 +23,10 @@
       <nav>
         <ul>
           <li>
-            <a href="#aboutLTS">About LTS</a>
+            <!-- We need abbreviation where we use short form. -->
+            <a href="#aboutLTS"
+              >About <abbr title="The Little Taco Shop">LTS</abbr>
+            </a>
           </li>
           <li>
             <a href="#ourMenu">Our Menu</a>
@@ -28,9 +40,11 @@
         </ul>
       </nav>
       <figure>
+        <!-- `title` is optional. -->
         <img
           src="./Img/tacos_and_drink_400x267.png"
           alt="Tacos And Drinks!"
+          title="We love tacos!"
           width="400"
           height="267"
         />
@@ -39,18 +53,22 @@
     </header>
     <hr />
     <main>
-      <section id="aboutLTS">
+      <!-- Use `section` tag only to separate some generic piece of content otherwise use `article`. -->
+      <article id="aboutLTS">
         <h2>About <abbr title="Little Tacos Shop">LTS</abbr></h2>
         <p>
-          <abbr title="Little Tacos Shop">LTS</abbr> was founded in 2022. Our
-          shop was built from the <strong>love of tacos</strong>🌮🌮🌮. We hope
-          our shop adds a unique and interesting place to our little town.
+          <!-- use `time` elements for proper semantics. -->
+          <abbr title="Little Tacos Shop">LTS</abbr> was founded in
+          <time datetime="2022">2022</time>. Our shop was built from a
+          <strong>love of tacos</strong>🌮🌮🌮. We hope our shop adds a unique
+          and interesting place to our little town.
         </p>
 
-        <h3>Taco Trivia</h3>
+        <!-- <h3>Taco Trivia</h3> `h3` cannot be here - it should be present in the form of child to `h2` which here it is clearly not! -->
         <aside>
+          <h3>Taco Trivia</h3>
           <details>
-            <summary>When did tacos first appear in the United State?</summary>
+            <summary>When did tacos first appear in the United States?</summary>
             <p>
               Jeffrey M. Pilcher, taco historian and professor of history at the
               University of Minnesota, says the earliest mention of tacos in the
@@ -59,7 +77,7 @@
 
               <!-- `cite` tag - use to mark some creative work. It usually stores the title or the work or the name of the author. -->
               <cite>
-                <!-- `target` attribute - specifies where to display the linked URL. Here value "_blank" tells to browser to open the given link in a new tab. It has to be used carefully - it is advised to use `rel` attribute value set to `noreferrer` for security measures. `rel` attribute specifies the relation between element and the linked object. Also note that `target="_blank"` will open the link in a new tab but will both the links, the parent and the child one under same process therefore if the linked link uses heavy JavaScript then add `rel="noopener"` to avoid performance issue.  -->
+                <!-- `target` attribute - specifies where to display the linked URL. Here value "_blank" tells to browser to open the given link in a new tab. It has to be used carefully - it is advised to use `rel` attribute value set to `noreferrer` for security measures. `rel` attribute specifies the relation between element and the linked object. Also note that `target="_blank"` will open the link in a new tab but will both the links, the parent and the child one under same process therefore if the linked link uses heavy JavaScript then add `rel="noopener"` to avoid performance issue. By default citation are presented in italics.  -->
                 <a
                   href="https://www.smithsonianmag.com/arts-culture/where-did-the-taco-come-from-81228162/"
                   target="_blank"
@@ -70,10 +88,11 @@
             </p>
           </details>
         </aside>
-      </section>
+      </article>
       <hr />
-      <section id="ourMenu">
+      <article id="ourMenu">
         <h2>Our Menu</h2>
+        <!-- following the heading hierarchy for each `article`. -->
         <table>
           <caption>
             Our Tacos
@@ -116,16 +135,37 @@
           </tbody>
           <tfoot>
             <tr>
-              <td colspan="3">Chips & Salsa $2</td>
+              <!-- `&`(ampersand) is also an entity in HTML represented with `&amp;`. -->
+              <td colspan="3">Chips &amp; Salsa $2</td>
             </tr>
           </tfoot>
         </table>
-      </section>
-      <br />
-      <a href="#">Back to Top</a>
+        <br />
+        <!-- Keep this inside the article only. -->
+        <a href="#">Back to Top</a>
+        <!-- Will reload the page and take the user to top of the page. -->
+      </article>
+
       <hr />
     </main>
 
+    <!-- 
+    We can even do our development first write the `header`, `main` and `footer` with comment in it and then from there start the development.
+     
+    <header>
+      Our header
+    </header>
+
+    <main>
+      Our main
+    </main>
+
+    <footer>
+      Our footer
+    </footer>
+    
+    Obviously per page we should have only one of each for optimal semantics. Also if header, main or footer are mostly the same in all pages or most pages of the web page then it better to the similar or same  one in one page then copy-paste on all the pages.
+    -->
     <footer>
       <p>Copyright &copy The Little Taco Shop</p>
     </footer>

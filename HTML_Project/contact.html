@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rounak Singh" />
+    <meta
+      name="description"
+      content="Contact information for The Little Taco Shop"
+    />
     <title>LTS - Contact Us</title>
     <link rel="icon" href="./icon/favicon.ico" />
     <link rel="stylesheet" href="./CSS/style.css" />
@@ -13,13 +18,13 @@
       <nav>
         <ul>
           <li>
-            <a href="index.html">Home</a>
+            <a href="./">Home</a>
           </li>
           <li>
-            <a href="./index.html#aboutLTS">About LTS</a>
+            <a href="./#aboutLTS">About LTS</a>
           </li>
           <li>
-            <a href="./index.html#ourMenu">Our Menu</a>
+            <a href="./#ourMenu">Our Menu</a>
           </li>
           <li>
             <a href="./hours.html#ourHours">Store Hours</a>
@@ -31,6 +36,7 @@
         <img
           src="./Img/tacos_close_up_400x260.png"
           alt="Tacos Close Up"
+          title="Tacos ready to eat!"
           width="400"
           height="260"
         />
@@ -39,7 +45,8 @@
     </header>
 
     <main>
-      <article id="contactUs">
+      <!-- Using `section` instead of `article` because article is used when we have a content belonging to that page but this is a `form` not a content. -->
+      <section id="contactUs">
         <h2>Our Contact Form</h2>
         <form action="https://httpbin.org/post" method="post">
           <fieldset>
@@ -66,33 +73,36 @@
                 required
               />
             </p>
-
-            <label for="messageToUs">Your Message:</label>
-            <br />
-            <textarea
-              name="messageToUs"
-              id="messageToUs"
-              cols="30"
-              rows="10"
-              placeholder="Type of your message here."
-            ></textarea>
+            <p>
+              <label for="messageToUs">Your Message:</label>
+              <br />
+              <textarea
+                name="messageToUs"
+                id="messageToUs"
+                cols="30"
+                rows="10"
+                placeholder="Type of your message here."
+              ></textarea>
+            </p>
           </fieldset>
           <button type="submit">Submit</button>
           <button type="reset">Reset</button>
         </form>
-      </article>
+      </section>
 
-      <article id="OurLocation">
+      <section id="OurLocation">
         <h2>Our Location</h2>
         <!-- <p>
             <address></address>
         </p> This is wrong we cannot pass `address` tag inside `p` tag because the semantics will then be not correct. -->
         <address>
           555 Taco Temptation Lane, Suite T <br />
-          Kansas City, MO 55555-5555
+          Kansas City, MO 55555-5555 Phone:
+          <br /><br />
+          Phone: <a href="tel:+915555555555">55555-55555</a>
+          <!-- Phone information is also supposed to be inside `address` element. -->
         </address>
-        <p><em>Phone:</em> <a href="tel:+915555555555">55555-55555</a></p>
-      </article>
+      </section>
 
       <p>
         <a href="#">Back To Top</a>
@@ -101,6 +111,6 @@
 
     <hr />
 
-    <footer>Copyright &copy; The Little Taco Shop</footer>
+    <footer><p>Copyright &copy; The Little Taco Shop</p></footer>
   </body>
 </html>
