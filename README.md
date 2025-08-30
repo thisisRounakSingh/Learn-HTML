@@ -22,13 +22,13 @@
 
 ## Chapter List -
 
-1. [Chapter 01 - Getting Started](https://github.com/thisisRounakSingh/Learn-HTML5/tree/lesson-01/lesson-01)
-2. [Chapter 02 - Head Element](https://github.com/thisisRounakSingh/Learn-HTML5/tree/lesson-02/lesson-02)
-3. [Chapter 03 - Text Basics](https://github.com/thisisRounakSingh/Learn-HTML5/tree/lesson-03/lesson-03)
-4. [Chapter 04 - List In HTML5](https://github.com/thisisRounakSingh/Learn-HTML5/tree/lesson-04/lesson-04)
-5. [Chapter 05 - Links In HTML5](https://github.com/thisisRounakSingh/Learn-HTML5/tree/lesson-05/lesson-05)
-6. [Chapter 06 - Images In HTML5](https://github.com/thisisRounakSingh/Learn-HTML5/tree/lesson-06/lesson-06)
-7. [Chapter 07 - Semantics](https://github.com/thisisRounakSingh/Learn-HTML5/tree/lesson-07/lesson-07)
-8. [Chapter 08 - Tables In HTML5](https://github.com/thisisRounakSingh/Learn-HTML5/tree/lesson-08/lesson-08)
-9. [Chapter 09 - Forms And Inputs](https://github.com/thisisRounakSingh/Learn-HTML5/tree/lesson-09/lesson-09)
-10. [Chapter 10 - HTML5 Project](https://github.com/thisisRounakSingh/Learn-HTML5/tree/HTML5_Project/HTML5_Project)
+1. [Chapter 01 - Getting Started](https://github.com/thisisRounakSingh/Learn-HTML/tree/lesson-01/)
+2. [Chapter 02 - Head Element](https://github.com/thisisRounakSingh/Learn-HTML/tree/lesson-02/)
+3. [Chapter 03 - Text Basics](https://github.com/thisisRounakSingh/Learn-HTML/tree/lesson-03/)
+4. [Chapter 04 - List In HTML5](https://github.com/thisisRounakSingh/Learn-HTML/tree/lesson-04/)
+5. [Chapter 05 - Links In HTML5](https://github.com/thisisRounakSingh/Learn-HTML/tree/lesson-05/)
+6. [Chapter 06 - Images In HTML5](https://github.com/thisisRounakSingh/Learn-HTML/tree/lesson-06/)
+7. [Chapter 07 - Semantics](https://github.com/thisisRounakSingh/Learn-HTML/tree/lesson-07/)
+8. [Chapter 08 - Tables In HTML5](https://github.com/thisisRounakSingh/Learn-HTML/tree/lesson-08/)
+9. [Chapter 09 - Forms And Inputs](https://github.com/thisisRounakSingh/Learn-HTML/tree/lesson-09/)
+10. [Chapter 10 - HTML5 Project](https://github.com/thisisRounakSingh/Learn-HTML/tree/HTML_Project/)
