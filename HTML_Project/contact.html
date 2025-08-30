@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LTS - Contact Us</title>
+    <link rel="icon" href="./icon/favicon.ico" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="./index.html#aboutLTS">About LTS</a>
+          </li>
+          <li>
+            <a href="./index.html#ourMenu">Our Menu</a>
+          </li>
+          <li>
+            <a href="./hours.html#ourHours">Store Hours</a>
+          </li>
+        </ul>
+      </nav>
+
+      <figure>
+        <img
+          src="./Img/tacos_close_up_400x260.png"
+          alt="Tacos Close Up"
+          width="400"
+          height="260"
+        />
+        <figcaption>Little Taco Shop Tacos</figcaption>
+      </figure>
+    </header>
+
+    <main>
+      <article id="contactUs">
+        <h2>Our Contact Form</h2>
+        <form action="https://httpbin.org/post" method="post">
+          <fieldset>
+            <legend>Send us a message</legend>
+            <p>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name here"
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="someone@email.com"
+                autocomplete="on"
+                required
+              />
+            </p>
+
+            <label for="messageToUs">Your Message:</label>
+            <br />
+            <textarea
+              name="messageToUs"
+              id="messageToUs"
+              cols="30"
+              rows="10"
+              placeholder="Type of your message here."
+            ></textarea>
+          </fieldset>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </article>
+
+      <article id="OurLocation">
+        <h2>Our Location</h2>
+        <!-- <p>
+            <address></address>
+        </p> This is wrong we cannot pass `address` tag inside `p` tag because the semantics will then be not correct. -->
+        <address>
+          555 Taco Temptation Lane, Suite T <br />
+          Kansas City, MO 55555-5555
+        </address>
+        <p><em>Phone:</em> <a href="tel:+915555555555">55555-55555</a></p>
+      </article>
+
+      <p>
+        <a href="#">Back To Top</a>
+      </p>
+    </main>
+
+    <hr />
+
+    <footer>Copyright &copy; The Little Taco Shop</footer>
+  </body>
+</html>

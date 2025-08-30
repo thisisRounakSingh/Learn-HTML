@@ -20,7 +20,7 @@
             <a href="#ourMenu">Our Menu</a>
           </li>
           <li>
-            <a href="hours.html">Store Hours</a>
+            <a href="./hours.html#storeHours">Store Hours</a>
           </li>
           <li>
             <a href="contact.html">Contact Us</a>
@@ -28,7 +28,12 @@
         </ul>
       </nav>
       <figure>
-        <img src="./Img/tacos_and_drink_400x267.png" alt="Tacos And Drinks!" />
+        <img
+          src="./Img/tacos_and_drink_400x267.png"
+          alt="Tacos And Drinks!"
+          width="400"
+          height="267"
+        />
         <figcaption>Tacos and a drink</figcaption>
       </figure>
     </header>
@@ -43,13 +48,28 @@
         </p>
 
         <h3>Taco Trivia</h3>
-        <details>
-          <summary>When did tacos first appear in the United State?</summary>
-          <p>
-            Tacos were first introduced to the United States
-            <mark>in 1905</mark>.
-          </p>
-        </details>
+        <aside>
+          <details>
+            <summary>When did tacos first appear in the United State?</summary>
+            <p>
+              Jeffrey M. Pilcher, taco historian and professor of history at the
+              University of Minnesota, says the earliest mention of tacos in the
+              United States are in a newspaper from
+              <time datetime="1905">1905</time>. (Source:
+
+              <!-- `cite` tag - use to mark some creative work. It usually stores the title or the work or the name of the author. -->
+              <cite>
+                <!-- `target` attribute - specifies where to display the linked URL. Here value "_blank" tells to browser to open the given link in a new tab. It has to be used carefully - it is advised to use `rel` attribute value set to `noreferrer` for security measures. `rel` attribute specifies the relation between element and the linked object. Also note that `target="_blank"` will open the link in a new tab but will both the links, the parent and the child one under same process therefore if the linked link uses heavy JavaScript then add `rel="noopener"` to avoid performance issue.  -->
+                <a
+                  href="https://www.smithsonianmag.com/arts-culture/where-did-the-taco-come-from-81228162/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Smithsonian Magazine</a
+                ></cite
+              >)
+            </p>
+          </details>
+        </aside>
       </section>
       <hr />
       <section id="ourMenu">
